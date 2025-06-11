@@ -1,0 +1,168 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.dashboard-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  margin-bottom: 10px;
+}
+
+#userEmail,
+#userScore {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.dashboard-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px;
+}
+
+.button-group button {body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Header Styles */
+.dashboard-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.dashboard-header .logo {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dashboard-header h1 {
+  margin: 10px 0 5px;
+  font-size: 28px;
+}
+
+#userEmail,
+#userScore {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Main Buttons */
+.dashboard-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+.button-group button {
+  padding: 14px 28px;
+  margin: 12px;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.dashboard-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #555;
+  background-color: #eee;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .dashboard-header h1 {
+    font-size: 22px;
+  }
+
+  .button-group button {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .dashboard-header .logo {
+    width: 60px;
+  }
+}
+
+  padding: 12px 24px;
+  margin: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+.dashboard-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #555;
+  background-color: #eee;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .dashboard-header {
+  background-color: #1f1f1f;
+}
+
+.dark-mode .button-group button {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .dashboard-footer {
+  background-color: #1a1a1a;
+  color: #aaa;
+}
+.logo {
+  height: 100px;
+  width: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | Code Buddy</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <header class="dashboard-header">
+    <div class="container">
+      <img src="logo.png" alt="Code Buddy Logo" class="logo" />
+      <h1>Code Buddy Dashboard</h1>
+      <p id="userEmail">Welcome, user@example.com</p>
+      <p>Your Score: <span id="userScore">0</span></p>
+      <button id="darkModeToggle">🌓 Toggle Dark Mode</button>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <div class="button-group">
+      <button onclick="location.href='problems.html'">📘 Solve Problems</button>
+      <button onclick="logout()">🚪 Logout</button>
+
+    </div>
+
+    <!-- 📊 Progress Chart -->
+    <section class="chart-section">
+      <h2>Your Progress</h2>
+      <canvas id="scoreChart" width="400" height="200"></canvas>
+    </section>
+  </main>
+
+  <footer class="dashboard-footer">
+    <p>© 2025 Code Buddy. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Code Buddy | Problems</title>
+  <link rel="stylesheet" href="problems.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+</head>
+<body>
+  <header>
+    <h1>🚀 CodeBuddy Problems</h1>
+    <button id="basicsBtn">📘 Programming Basics</button>
+  </header>
+
+  <div class="container">
+    <aside>
+      <h2>🧩 Problems</h2>
+      <select id="difficultyFilter">
+        <option value="all">All</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <div id="problemList"></div>
+    </aside>
+
+    <main>
+      <div class="controls">
+        <label for="languageSelect">Language:</label>
+        <select id="languageSelect">
+          <option value="python">Python</option>
+          <option value="javascript">JavaScript</option>
+          <option value="text/x-c++src">C++</option>
+        </select>
+      </div>
+
+      <textarea id="codeEditor">// Start coding here...</textarea>
+
+      <div class="buttons">
+        <button id="submitCode">✅ Submit</button>
+        <button id="resetCode">🔄 Reset</button>
+      </div>
+
+      <div id="outputArea"></div>
+    </main>
+  </div>
+
+  <div id="basicsSection" class="hidden">
+    <h3>📘 Programming Basics</h3>
+    <ul>
+      <li>Variables & Data Types</li>
+      <li>Conditionals (if, else)</li>
+      <li>Loops (for, while)</li>
+      <li>Functions</li>
+      <li>Lists/Arrays</li>
+      <li>Input & Output</li>
+    </ul>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/python/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/clike/clike.min.js"></script>
+  <script src="problems.js"></script>
+</body>
+</html>
